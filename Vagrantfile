@@ -59,6 +59,5 @@ Vagrant.configure("2") do |config|
     end
   end
   config.vm.provision "shell", name: "1-disable-swap", path: "setup-scripts/1-disable-swap.sh", privileged: false
-  config.vm.provision "shell", name: "2-install-essential-tools", path: "setup-scripts/2-install-essential-tools.sh", privileged: false
-  config.vm.provision "file",  source: "./config/", destination: "."
+  config.vm.provision "shell", name: "2-setup-environment-tools", path: "setup-scripts/2-setup-environment-tools.sh", privileged: false
 end

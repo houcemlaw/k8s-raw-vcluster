@@ -1,6 +1,6 @@
 # k8s-raw-vcluster Vagrant Cluster
 
-Bootstrap a local **2 nodes** cluster using Vagrant in order to test kubernetes installation procedure.
+Bootstrap a local `Ubunto 22.04` or `Debian 12` **2 nodes** cluster using Vagrant in order to test kubernetes installation procedure.
 
 This project aim to help quickly bootstrap a k8s training cluster for testing, devolpment or training purposes.
 
@@ -20,7 +20,13 @@ vagrant up
 Now Vagrant will start provisioning the cluster starting with the `controlplane` node and the the worker node.
 This setup is available with 2 nodes: a master node (`controlplane`) and a worker node (`node01`).
 
-If you wish to bootstarp additional worker nodes please feel free to update your `VagrantFile` accordingly.
+If you wish to bootstrap additional worker nodes please feel free to update your `VagrantFile` accordingly.<br/>
+
+Once the bootstrap process finished go ahead and inspect your cluster using the following command:
+
+```sh
+vagrant global-status
+```
 
 ## Work with the cluster
 
