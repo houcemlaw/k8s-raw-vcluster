@@ -2,7 +2,8 @@
 
 Bootstrap a local `Ubunto 22.04` or `Debian 12` **2 nodes** cluster using Vagrant in order to test kubernetes installation procedure.
 
-This project aim to help quickly bootstrap a k8s training cluster for testing, devolpment or training purposes.
+If you are looking for a way to practice k8s installation procedure then you are in the right place.
+This project aim to help quickly bootstrap a training k8s-free cluster for testing k8s installation procedure.
 
 ## Prerequisites
 
